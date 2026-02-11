@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero */}
       <section className="mb-12 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-          Knowledge Hub
+          EUR Stablecoin Knowledge Hub
         </h1>
         <p className="text-lg text-muted-foreground">
           Guides, tutorials, and insights on how to grow your Euros in DeFi

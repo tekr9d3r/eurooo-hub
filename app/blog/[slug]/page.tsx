@@ -21,6 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    keywords: [
+      "EUR stablecoin",
+      "EURC",
+      "DeFi",
+      ...post.title.split(/[\s:?—]+/).filter((w) => w.length > 3),
+    ],
     openGraph: {
       title: post.title,
       description: post.description,
@@ -43,8 +49,41 @@ export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
   const post = await getPostData(slug);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    author: {
+      "@type": "Organization",
+      name: "Eurooo",
+      url: "https://www.eurooo.xyz",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Eurooo",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://hub.eurooo.xyz/images/logo.png",
+      },
+    },
+    ...(post.coverImage && {
+      image: `https://hub.eurooo.xyz${post.coverImage}`,
+    }),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://hub.eurooo.xyz/blog/${slug}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Back link */}
       <Link
         href="/"

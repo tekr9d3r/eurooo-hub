@@ -87,6 +87,39 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  name: "Eurooo",
+                  url: "https://www.eurooo.xyz",
+                  logo: "https://hub.eurooo.xyz/images/logo.png",
+                  sameAs: [
+                    "https://x.com/tekr0x",
+                    "https://t.me/euroaborad",
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  name: "Eurooo Knowledge Hub",
+                  url: "https://hub.eurooo.xyz",
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Eurooo",
+                  },
+                  description:
+                    "Guides, tutorials, and insights on EUR stablecoins and DeFi yield strategies for European users.",
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
