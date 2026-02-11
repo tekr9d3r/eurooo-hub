@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+    --primary: 220 100% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 96%;
+    --secondary-foreground: 220 20% 15%;
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 48 100% 50%;
+    --accent-foreground: 220 20% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 220 100% 30%;
+    --radius: 0.75rem;
+    --success: 145 65% 42%;
+    --success-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 15% 95%;
+    --card: 220 25% 12%;
+    --card-foreground: 220 15% 95%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 220 15% 95%;
+    --primary: 220 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 220 15% 95%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 48 100% 50%;
+    --accent-foreground: 220 25% 8%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 220 100% 55%;
+    --success: 145 65% 50%;
+    --success-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Smooth scrolling & selection */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: hsl(220 100% 55% / 0.3);
+  color: hsl(220 15% 95%);
+}
+
+/* ── Prose – semantic token markdown content ── */
+.prose {
+  @apply text-foreground/80;
+}
+
+.prose h1 {
+  @apply text-3xl font-bold mt-10 mb-4 text-foreground tracking-tight;
+}
+
+.prose h2 {
+  @apply text-2xl font-semibold mt-10 mb-4 text-foreground tracking-tight;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold mt-8 mb-3 text-foreground/90;
+}
+
+.prose h4 {
+  @apply text-lg font-semibold mt-6 mb-2 text-foreground/85;
+}
+
+.prose p {
+  @apply mb-5 leading-relaxed text-muted-foreground;
+}
+
+.prose ul {
+  @apply list-disc mb-5 pl-6 text-muted-foreground space-y-2;
+}
+
+.prose ol {
+  @apply list-decimal mb-5 pl-6 text-muted-foreground space-y-2;
+}
+
+.prose li {
+  @apply leading-relaxed;
+}
+
+.prose li > ul,
+.prose li > ol {
+  @apply mt-2 mb-0;
+}
+
+.prose a {
+  @apply text-primary hover:text-primary/80 underline underline-offset-2 transition-colors;
+}
+
+.prose code {
+  @apply bg-secondary text-primary px-1.5 py-0.5 rounded-sm text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-secondary border border-border p-4 rounded-lg overflow-x-auto mb-5;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-foreground/80;
+}
+
+.prose blockquote {
+  @apply border-l-2 border-primary bg-primary/5 rounded-r-lg pl-5 pr-4 py-3 my-6 not-italic text-foreground/80;
+}
+
+.prose blockquote p {
+  @apply text-foreground/80 mb-0;
+}
+
+.prose blockquote p:last-child {
+  @apply mb-0;
+}
+
+.prose img {
+  @apply rounded-lg my-5;
+}
+
+.prose strong {
+  @apply text-foreground font-semibold;
+}
+
+.prose hr {
+  @apply border-border my-10;
+}
+
+/* ── Table styling ── */
+.prose table {
+  @apply w-full my-6 text-sm border-collapse;
+}
+
+.prose thead th {
+  @apply text-left text-foreground/90 font-semibold text-xs uppercase tracking-wider py-3 px-4 bg-secondary border-b border-border;
+}
+
+.prose thead th:first-child {
+  @apply rounded-tl-lg;
+}
+
+.prose thead th:last-child {
+  @apply rounded-tr-lg;
+}
+
+.prose tbody td {
+  @apply py-3 px-4 text-muted-foreground border-b border-border/50;
+}
+
+.prose tbody tr:last-child td {
+  @apply border-b-0;
+}
+
+.prose tbody tr:hover {
+  @apply bg-secondary/50;
+}
+
+/* ── CTA link styling ── */
+.prose a[href*="eurooo.xyz/app"],
+.prose a[href*="eurooo.xyz/stats"],
+.prose a[href*="eurooo.xyz/blog"] {
+  @apply inline-flex items-center gap-1 text-primary hover:text-primary/80 font-medium no-underline hover:underline;
+}
