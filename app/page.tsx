@@ -24,26 +24,15 @@ export default function Home() {
           Latest articles
         </h2>
 
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4">
           {posts.map((post, i) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
               <article
-                className="h-full rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50"
+                className="flex flex-col md:flex-row rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                {post.coverImage && (
-                  <div className="relative aspect-[1200/630] w-full">
-                    <Image
-                      src={post.coverImage}
-                      alt={post.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
-                )}
-                <div className="p-5">
-                  <h3 className="text-base font-medium group-hover:text-primary transition-colors mb-2 leading-snug">
+                <div className="flex-1 p-5 flex flex-col justify-center">
+                  <h3 className="text-lg font-medium group-hover:text-primary transition-colors mb-2 leading-snug">
                     {post.title}
                   </h3>
                   <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
@@ -57,6 +46,17 @@ export default function Home() {
                     })}
                   </time>
                 </div>
+                {post.coverImage && (
+                  <div className="relative aspect-[1200/630] md:aspect-auto md:w-64 lg:w-80 shrink-0">
+                    <Image
+                      src={post.coverImage}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 320px"
+                    />
+                  </div>
+                )}
               </article>
             </Link>
           ))}
