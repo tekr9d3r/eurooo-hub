@@ -31,11 +31,11 @@ export default function Home() {
                 className="flex flex-col md:flex-row rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <div className="flex-1 p-5 flex flex-col justify-center">
+                <div className="md:w-1/2 p-6 flex flex-col justify-center">
                   <h3 className="text-lg font-medium group-hover:text-primary transition-colors mb-2 leading-snug">
                     {post.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+                  <p className="text-sm text-muted-foreground line-clamp-3 mb-3">
                     {post.description}
                   </p>
                   <time className="text-xs text-muted-foreground/70">
@@ -47,13 +47,13 @@ export default function Home() {
                   </time>
                 </div>
                 {post.coverImage && (
-                  <div className="relative aspect-[1200/630] md:aspect-auto md:w-64 lg:w-80 shrink-0">
+                  <div className="relative aspect-[1200/630] md:aspect-auto md:w-1/2 shrink-0">
                     <Image
                       src={post.coverImage}
                       alt={post.title}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 320px"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                 )}
