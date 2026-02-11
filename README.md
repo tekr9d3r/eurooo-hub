@@ -1,154 +1,73 @@
-# Next.js Blog Template
+# Eurooo Knowledge Hub
 
-A lightweight, SEO-friendly blog template built with Next.js, TypeScript, and Tailwind CSS. Write your posts in Markdown and deploy to Vercel with automatic builds on every push.
+The educational blog for [eurooo.xyz](https://www.eurooo.xyz/) — a DeFi yield aggregator for EUR stablecoins. This Knowledge Hub helps users understand EUR stablecoins, MiCA regulation, DeFi yield strategies, and how to earn yield on their digital euros.
 
-## Features
+## Tech Stack
 
-- ✅ **SEO Optimized**: Built-in meta tags, Open Graph, and Twitter cards
-- ✅ **Markdown Support**: Write posts in Markdown with frontmatter
-- ✅ **Static Generation**: Pre-rendered at build time for maximum performance
-- ✅ **Responsive Design**: Mobile-friendly with Tailwind CSS
-- ✅ **Zero Config Deployment**: Deploy to Vercel with one click
-- ✅ **TypeScript**: Fully typed for better development experience
-- ✅ **Automatic Routing**: File-based routing for blog posts
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript 5](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS 3](https://tailwindcss.com/) with CSS variable-based design tokens
+- **Theming:** [next-themes](https://github.com/pacocoursey/next-themes) (dark/light mode)
+- **Content:** Markdown with frontmatter (gray-matter + remark)
+- **Deployment:** [Vercel](https://vercel.com/)
+- **Font:** Inter
 
-## Quick Start
+## Blog Topics
 
-### 1. Install Dependencies
+- What are EUR stablecoins?
+- EURC vs EURS vs EURCv comparison
+- DeFi yield strategies for Europeans
+- MiCA compliance explained
+- EUR stablecoins vs the Digital Euro (CBDC)
+
+## Getting Started
 
 ```bash
+# Install dependencies
 npm install
-```
 
-### 2. Run Development Server
-
-```bash
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Adding a Blog Post
 
-### 3. Add Blog Posts
-
-Create a new Markdown file in the `posts` directory:
+Create a new `.md` file in the `posts/` directory:
 
 ```markdown
 ---
 title: "Your Post Title"
-date: "2024-01-15"
-description: "A brief description of your post"
+date: "2025-01-15"
+description: "A brief description for SEO"
 ---
-
-# Your Post Title
 
 Your content here...
 ```
 
-**Frontmatter Fields:**
-- `title`: Post title (required)
-- `date`: Publication date in YYYY-MM-DD format (required)
-- `description`: Short description for SEO and post listing (required)
-
-### 4. Build for Production
-
-```bash
-npm run build
-```
-
-This generates a static export in the `out` directory.
-
-## Deployment to Vercel
-
-### Option 1: Deploy with Vercel CLI
-
-```bash
-npm install -g vercel
-vercel
-```
-
-### Option 2: Deploy via GitHub
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
-4. Vercel will automatically detect Next.js and deploy
-
-### Automatic Deployments
-
-Once connected, every push to your main branch will trigger a new deployment. Add new posts by:
-
-```bash
-# Add your new markdown file
-git add posts/my-new-post.md
-git commit -m "Add new blog post"
-git push
-```
-
-Vercel will automatically rebuild and deploy your site.
-
-## Customization
-
-### Update Site Metadata
-
-Edit `app/layout.tsx` to update:
-- Site title and description
-- Social media links
-- Author information
-- Open Graph images
-
-### Styling
-
-The blog uses Tailwind CSS. Customize:
-- Colors and fonts in `tailwind.config.ts`
-- Global styles in `app/globals.css`
-- Blog content styles in the `.prose` class
-
-### Add Features
-
-Some ideas for extending the blog:
-- Add a search function
-- Include categories or tags
-- Add syntax highlighting for code blocks
-- Include a newsletter signup
-- Add reading time estimates
-
 ## Project Structure
 
 ```
-blog-template/
-├── app/                    # Next.js app directory
-│   ├── blog/[slug]/       # Dynamic blog post pages
-│   ├── layout.tsx         # Root layout with SEO
-│   ├── page.tsx           # Homepage (post listing)
-│   └── globals.css        # Global styles
+eurooo-hub/
+├── app/
+│   ├── blog/[slug]/       # Blog post pages
+│   ├── layout.tsx          # Root layout (header, footer)
+│   ├── page.tsx            # Homepage (post listing)
+│   └── globals.css         # Design tokens & styles
+├── components/
+│   └── theme-provider.tsx  # Dark/light theme wrapper
 ├── lib/
-│   └── posts.ts           # Markdown parsing utilities
-├── posts/                 # Your blog posts (Markdown)
-│   ├── example-post.md
-│   └── another-post.md
-├── public/                # Static assets
-├── next.config.ts         # Next.js configuration
-├── package.json
-└── README.md
+│   └── posts.ts            # Markdown parsing
+├── posts/                  # Blog content (Markdown)
+├── public/images/          # Static assets
+└── next.config.ts          # Next.js config
 ```
 
-## SEO Features
+## Links
 
-This template includes:
-- Dynamic meta tags per post
-- Open Graph tags for social sharing
-- Twitter Card support
-- Semantic HTML structure
-- Mobile-responsive design
-- Fast loading times with static generation
-
-## License
-
-MIT - feel free to use this template for your own blog!
-
-## Support
-
-For issues or questions:
-- Check the [Next.js documentation](https://nextjs.org/docs)
-- Visit the [Vercel documentation](https://vercel.com/docs)
-- Open an issue on GitHub
+- **Website:** [eurooo.xyz](https://www.eurooo.xyz/)
+- **Knowledge Hub:** [hub.eurooo.xyz](https://hub.eurooo.xyz/)
+- **X (Twitter):** [@tekr0x](https://x.com/tekr0x)
+- **Telegram:** [t.me/euroaborad](https://t.me/euroaborad)
