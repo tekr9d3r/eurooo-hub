@@ -52,10 +52,10 @@ export const metadata: Metadata = {
       "Learn how to earn yield on EUR stablecoins like EURC in DeFi. Guides on Aave, Morpho, MiCA compliance, and Euro stablecoin strategies.",
     images: [
       {
-        url: "/images/logo.png",
-        width: 512,
-        height: 512,
-        alt: "Eurooo Hub",
+        url: "/images/og-cover.png",
+        width: 1200,
+        height: 630,
+        alt: "Eurooo Knowledge Hub — Guides, tutorials, and insights on how to grow your Euros in DeFi",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Eurooo Knowledge Hub — Grow Your Euros in DeFi",
     description:
       "Learn how to earn yield on EUR stablecoins like EURC in DeFi. Guides on Aave, Morpho, MiCA compliance, and Euro stablecoin strategies.",
-    images: ["/images/logo.png"],
+    images: ["/images/og-cover.png"],
   },
   robots: {
     index: true,
