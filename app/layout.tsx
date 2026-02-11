@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
 const inter = Inter({
@@ -189,6 +190,7 @@ export default function RootLayout({
                       <path d="m12 5 7 7-7 7" />
                     </svg>
                   </a>
+                  <ThemeToggle />
                 </div>
               </div>
             </header>
