@@ -47,12 +47,13 @@ export default function Home() {
                   </time>
                 </div>
                 {post.coverImage && (
-                  <div className="relative aspect-[1200/630] md:aspect-auto md:w-1/2 shrink-0">
+                  <div className="md:w-1/2 shrink-0 flex items-center justify-center p-4">
                     <Image
                       src={post.coverImage}
                       alt={post.title}
-                      fill
-                      className="object-cover"
+                      width={1200}
+                      height={630}
+                      className="rounded-md w-full h-auto"
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
