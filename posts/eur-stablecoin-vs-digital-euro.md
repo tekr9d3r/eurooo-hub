@@ -2,6 +2,7 @@
 title: "EUR Stablecoin vs Digital Euro (CBDC): What's the Difference?"
 date: "2026-02-06"
 description: "Understand the key differences between private Euro stablecoins like EURC and the European Central Bank's upcoming digital euro."
+coverImage: "/images/eur-stablecoin-vs-digital-euro.png"
 ---
 
 # EUR Stablecoin vs Digital Euro (CBDC): What's the Difference?

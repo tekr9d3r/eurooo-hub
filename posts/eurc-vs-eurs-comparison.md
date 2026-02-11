@@ -2,6 +2,7 @@
 title: "EURC vs EURS: Which EUR Stablecoin Should You Choose?"
 date: "2026-02-06"
 description: "Compare Circle's EURC and Stasis EURS — the two largest Euro stablecoins — by market cap, DeFi availability, and regulatory backing."
+coverImage: "/images/eurc-vs-eurs-comparison.png"
 ---
 
 # EURC vs EURS: Which EUR Stablecoin Should You Choose?

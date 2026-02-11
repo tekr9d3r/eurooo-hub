@@ -2,6 +2,7 @@
 title: "What Are EUR Stablecoins? A Complete Guide"
 date: "2026-02-06"
 description: "Learn what Euro stablecoins are, how they work, and why they matter for European DeFi users seeking to avoid USD exposure."
+coverImage: "/images/what-are-eur-stablecoins.png"
 ---
 
 # What Are EUR Stablecoins? A Complete Guide

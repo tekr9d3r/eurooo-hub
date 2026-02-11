@@ -11,6 +11,7 @@ export interface PostData {
   title: string;
   date: string;
   description: string;
+  coverImage: string;
   content: string;
 }
 
@@ -19,6 +20,7 @@ export interface PostMetadata {
   title: string;
   date: string;
   description: string;
+  coverImage: string;
 }
 
 export function getSortedPostsData(): PostMetadata[] {
@@ -43,6 +45,7 @@ export function getSortedPostsData(): PostMetadata[] {
         title: matterResult.data.title,
         date: matterResult.data.date,
         description: matterResult.data.description,
+        coverImage: matterResult.data.coverImage || "",
       };
     });
 
@@ -76,6 +79,7 @@ export async function getPostData(slug: string): Promise<PostData> {
     title: matterResult.data.title,
     date: matterResult.data.date,
     description: matterResult.data.description,
+    coverImage: matterResult.data.coverImage || "",
   };
 }
 

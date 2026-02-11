@@ -2,6 +2,7 @@
 title: "How to Earn Yield on EUR Stablecoins in DeFi"
 date: "2026-02-06"
 description: "Discover the best DeFi protocols for earning yield on Euro stablecoins like EURC, including Aave, Morpho, and more."
+coverImage: "/images/defi-yield-strategies-europe.png"
 ---
 
 # How to Earn Yield on EUR Stablecoins in DeFi

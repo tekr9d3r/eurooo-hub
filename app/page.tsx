@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/posts";
 
@@ -27,22 +28,35 @@ export default function Home() {
           {posts.map((post, i) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
               <article
-                className="h-full rounded-lg border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50"
+                className="h-full rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                <h3 className="text-base font-medium group-hover:text-primary transition-colors mb-2 leading-snug">
-                  {post.title}
-                </h3>
-                <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
-                  {post.description}
-                </p>
-                <time className="text-xs text-muted-foreground/70">
-                  {new Date(post.date).toLocaleDateString("en-US", {
-                    month: "short",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
-                </time>
+                {post.coverImage && (
+                  <div className="relative aspect-[1200/630] w-full">
+                    <Image
+                      src={post.coverImage}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                )}
+                <div className="p-5">
+                  <h3 className="text-base font-medium group-hover:text-primary transition-colors mb-2 leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+                    {post.description}
+                  </p>
+                  <time className="text-xs text-muted-foreground/70">
+                    {new Date(post.date).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </time>
+                </div>
               </article>
             </Link>
           ))}

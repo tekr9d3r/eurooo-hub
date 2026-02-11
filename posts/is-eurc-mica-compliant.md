@@ -2,6 +2,7 @@
 title: "Is EURC MiCA Compliant? A Guide for EU Users"
 date: "2026-02-06"
 description: "Understand Circle's EURC regulatory status under MiCA, what it means for European users, and why compliance matters for stablecoin safety."
+coverImage: "/images/is-eurc-mica-compliant.png"
 ---
 
 # Is EURC MiCA Compliant? A Guide for EU Users

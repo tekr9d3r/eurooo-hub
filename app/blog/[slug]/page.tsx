@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getPostData, getAllPostSlugs } from "@/lib/posts";
 
@@ -25,11 +26,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: "article",
       publishedTime: post.date,
+      images: post.coverImage
+        ? [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }]
+        : undefined,
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: post.coverImage ? [post.coverImage] : undefined,
     },
   };
 }
@@ -71,6 +76,18 @@ export default async function BlogPost({ params }: Props) {
         <p className="text-lg text-muted-foreground mb-6">
           {post.description}
         </p>
+        {post.coverImage && (
+          <div className="relative aspect-[1200/630] w-full mb-6 rounded-lg overflow-hidden">
+            <Image
+              src={post.coverImage}
+              alt={post.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 65ch"
+              priority
+            />
+          </div>
+        )}
         <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground border-b border-border pb-6">
           <span className="flex items-center gap-1.5">
             <svg
