@@ -49,13 +49,20 @@ CEUR is available on Celo, Solana, Polygon, and Ethereum.
 
 ### Other EUR Stablecoins (Ranked 11–15)
 
-| Rank | Name | Market Cap | Chains |
-|------|------|-----------|--------|
-| 11 | VEUR (VNX EURO) | €1.6M | Solana, Avalanche, Ethereum, Base +7 |
-| 12 | PAR (Parallel) | €1.2M | Ethereum, Polygon, Fantom |
-| 13 | EURAU (AllUnity EUR) | €1.1M | Ethereum, Base, OP Mainnet, Polygon |
-| 14 | EURT (Euro Tether) | €250K | Ethereum, Polygon |
-| 15 | EUROe (EUROe Stablecoin) | €113K | Solana, Polygon, Ethereum, Arbitrum +3 |
+**11. VEUR / VNX EURO — €1.6M (0.3%)**
+Available on Solana, Avalanche, Ethereum, Base, and seven additional chains.
+
+**12. PAR / Parallel — €1.2M (0.2%)**
+Available on Ethereum, Polygon, and Fantom.
+
+**13. EURAU / AllUnity EUR — €1.1M (0.2%)**
+Available on Ethereum, Base, OP Mainnet, and Polygon.
+
+**14. EURT / Euro Tether — €250K (0.0%)**
+Tether's Euro stablecoin, available on Ethereum and Polygon. Once a major player, EURT has seen its supply shrink significantly.
+
+**15. EUROe / EUROe Stablecoin — €113K (0.0%)**
+Available on Solana, Polygon, Ethereum, Arbitrum, and three additional chains.
 
 ---
 
