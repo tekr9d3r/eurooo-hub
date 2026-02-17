@@ -4,7 +4,8 @@ import { getSortedPostsData } from "@/lib/posts";
 
 export default function Home() {
   const posts = getSortedPostsData();
-  const [latestPost, ...olderPosts] = posts;
+  const featuredPost = posts.find((p) => p.featured) || posts[0];
+  const otherPosts = posts.filter((p) => p.slug !== featuredPost?.slug);
 
   return (
     <div>
@@ -20,18 +21,18 @@ export default function Home() {
       </section>
 
       {/* Latest post — full width */}
-      {latestPost && (
+      {featuredPost && (
         <section className="mb-12">
           <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
             Latest article
           </h2>
-          <Link href={`/blog/${latestPost.slug}`} className="group">
+          <Link href={`/blog/${featuredPost.slug}`} className="group">
             <article className="rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50">
-              {latestPost.coverImage && (
+              {featuredPost.coverImage && (
                 <div className="w-full">
                   <Image
-                    src={latestPost.coverImage}
-                    alt={latestPost.title}
+                    src={featuredPost.coverImage}
+                    alt={featuredPost.title}
                     width={1200}
                     height={630}
                     className="w-full h-auto"
@@ -42,13 +43,13 @@ export default function Home() {
               )}
               <div className="p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-semibold group-hover:text-primary transition-colors mb-3 leading-snug">
-                  {latestPost.title}
+                  {featuredPost.title}
                 </h3>
                 <p className="text-muted-foreground mb-4 max-w-2xl">
-                  {latestPost.description}
+                  {featuredPost.description}
                 </p>
                 <time className="text-sm text-muted-foreground/70">
-                  {new Date(latestPost.date).toLocaleDateString("en-US", {
+                  {new Date(featuredPost.date).toLocaleDateString("en-US", {
                     month: "short",
                     day: "numeric",
                     year: "numeric",
@@ -61,14 +62,14 @@ export default function Home() {
       )}
 
       {/* Older posts — 3-column gallery */}
-      {olderPosts.length > 0 && (
+      {otherPosts.length > 0 && (
         <section>
           <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
             More articles
           </h2>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {olderPosts.map((post, i) => (
+            {otherPosts.map((post, i) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
                 <article
                   className="h-full rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50"

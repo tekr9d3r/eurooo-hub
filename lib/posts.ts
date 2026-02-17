@@ -21,6 +21,7 @@ export interface PostMetadata {
   date: string;
   description: string;
   coverImage: string;
+  featured: boolean;
 }
 
 export function getSortedPostsData(): PostMetadata[] {
@@ -46,6 +47,7 @@ export function getSortedPostsData(): PostMetadata[] {
         date: matterResult.data.date,
         description: matterResult.data.description,
         coverImage: matterResult.data.coverImage || "",
+        featured: matterResult.data.featured || false,
       };
     });
 
