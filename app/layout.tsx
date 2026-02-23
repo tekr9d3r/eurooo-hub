@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/favicon-new.ico",
+    apple: "/images/logo-eurooo-new.png",
   },
   openGraph: {
     type: "website",
@@ -100,7 +100,7 @@ export default function RootLayout({
                   "@type": "Organization",
                   name: "Eurooo",
                   url: "https://www.eurooo.xyz",
-                  logo: "https://hub.eurooo.xyz/images/logo.png",
+                  logo: "https://hub.eurooo.xyz/images/logo-eurooo-new.png",
                   sameAs: [
                     "https://x.com/tekr0x",
                     "https://t.me/euroaborad",
@@ -139,7 +139,7 @@ export default function RootLayout({
                   className="flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
                   <Image
-                    src="/images/logo.png"
+                    src="/images/logo-eurooo-new.png"
                     alt="eurooo.xyz"
                     width={40}
                     height={40}
@@ -207,7 +207,7 @@ export default function RootLayout({
                 <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
                   <div className="flex items-center gap-3">
                     <Image
-                      src="/images/logo.png"
+                      src="/images/logo-eurooo-new.png"
                       alt="eurooo.xyz"
                       width={32}
                       height={32}

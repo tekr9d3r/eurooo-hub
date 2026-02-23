@@ -65,7 +65,7 @@ export default async function BlogPost({ params }: Props) {
       name: "Eurooo",
       logo: {
         "@type": "ImageObject",
-        url: "https://hub.eurooo.xyz/images/logo.png",
+        url: "https://hub.eurooo.xyz/images/logo-eurooo-new.png",
       },
     },
     ...(post.coverImage && {
