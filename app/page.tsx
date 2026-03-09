@@ -20,32 +20,32 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Latest post — full width */}
+      {/* Trending post — split layout on desktop */}
       {featuredPost && (
         <section className="mb-12">
           <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-6">
-            Latest article
+            Trending
           </h2>
           <Link href={`/blog/${featuredPost.slug}`} className="group">
-            <article className="rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50">
+            <article className="rounded-lg border border-border bg-card overflow-hidden shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50 md:flex md:flex-row-reverse md:items-stretch">
               {featuredPost.coverImage && (
-                <div className="w-full">
+                <div className="w-full md:w-1/2 md:flex-shrink-0">
                   <Image
                     src={featuredPost.coverImage}
                     alt={featuredPost.title}
                     width={1200}
                     height={630}
-                    className="w-full h-auto"
-                    sizes="100vw"
+                    className="w-full h-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     priority
                   />
                 </div>
               )}
-              <div className="p-6 md:p-8">
+              <div className="p-6 md:p-8 md:w-1/2 flex flex-col justify-center">
                 <h3 className="text-xl md:text-2xl font-semibold group-hover:text-primary transition-colors mb-3 leading-snug">
                   {featuredPost.title}
                 </h3>
-                <p className="text-muted-foreground mb-4 max-w-2xl">
+                <p className="text-muted-foreground mb-4">
                   {featuredPost.description}
                 </p>
                 <time className="text-sm text-muted-foreground/70">
