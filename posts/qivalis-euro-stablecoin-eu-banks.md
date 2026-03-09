@@ -74,15 +74,13 @@ The technical implementation is still being finalised, with the consortium evalu
 
 ## How Does Qivalis Compare to EURC?
 
-| | **Qivalis** | **EURC (Circle)** |
-|---|---|---|
-| Issuer | 12 EU bank consortium | Circle (US company) |
-| Regulatory base | Dutch Central Bank (DNB) | Allium Financial (France) |
-| MiCA compliance | Yes (seeking EMI license) | Yes (approved) |
-| Launch status | H2 2026 (planned) | Live since 2022 |
-| Market cap | Not yet launched | €415.6M (March 2026) |
-| Reserve structure | 40%+ bank deposits + EU govt bonds | 100% cash & short-term instruments |
-| Strategic angle | European autonomy | Global stablecoin infrastructure |
+Both Qivalis and EURC are MiCA-compliant euro stablecoins — but they come from very different worlds. EURC is issued by Circle, a US-based crypto company, and has been live since 2022, building up €415.6M in circulating supply across nine chains. Qivalis is issued by a consortium of 12 European banks and has not yet launched.
+
+On the regulatory side, EURC is already approved under MiCA through Allium Financial in France. Qivalis is seeking its Electronic Money Institution authorisation from the Dutch Central Bank — a process still in progress ahead of its H2 2026 target launch.
+
+Their reserve structures also differ. Qivalis keeps at least 40% of reserves in commercial bank deposits, with the rest in eurozone government securities — a model that reflects its banking consortium roots. EURC holds 100% of reserves in cash and short-term instruments within regulated EEA institutions.
+
+Strategically, the two products are pointed in different directions. EURC is designed as global stablecoin infrastructure — chain-agnostic, DeFi-native, broadly accessible. Qivalis is explicitly positioned around European financial autonomy, with its primary distribution channel running through the corporate client bases of its 12 member banks.
 
 EURC has a significant head start: over €415 million in circulating supply across nine chains, deep DeFi integration, and years of institutional track record. Qivalis enters with different strengths — the backing of 12 banks with existing corporate client relationships, established compliance infrastructure, and a direct distribution channel to enterprise customers who are more comfortable dealing with regulated banking entities than with crypto-native issuers.
 
