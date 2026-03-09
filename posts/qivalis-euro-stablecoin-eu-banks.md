@@ -116,4 +116,4 @@ The consortium is in active talks with crypto exchanges, market makers, and liqu
 
 ---
 
-*For live EUR stablecoin market data including current rankings and chain distribution, visit [eurooo.xyz/stats](https://www.eurooo.xyz/stats).*
+*For more information about Qivalis, visit the official website at <a href="https://qivalis.eu/" target="_blank" rel="noopener noreferrer">qivalis.eu</a>. For live EUR stablecoin market data including current rankings and chain distribution, visit [eurooo.xyz/stats](https://www.eurooo.xyz/stats).*
