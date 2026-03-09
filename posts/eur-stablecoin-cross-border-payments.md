@@ -25,12 +25,11 @@ A EUR stablecoin like EURC is a digital token that always equals exactly €1. I
 There are no correspondent banks, no SWIFT routing, and no business-hours restrictions. The transaction happens the same way at 3am on a Sunday as it does at 9am on a Monday.
 
 **Cost comparison:**
-| Method | Fee | Settlement time |
-|---|---|---|
-| Traditional wire transfer | ~6.5% avg | 1–5 business days |
-| SEPA transfer | Low, EUR-only | 1 business day |
-| EUR stablecoin (e.g. Base) | Cents | Minutes |
-| EUR stablecoin (Ethereum) | $1–10 | Minutes |
+
+- **Traditional wire transfer** — ~6.5% average fee, settles in 1–5 business days
+- **SEPA transfer** — low fees but EUR-only and limited to 1 business day settlement
+- **EUR stablecoin on Base** — costs cents, settles in minutes
+- **EUR stablecoin on Ethereum** — costs $1–10 depending on network congestion, settles in minutes
 
 EUR stablecoin transfers can reduce cross-border payment costs by **up to 80%** compared to traditional international euro bank transfers.
 
