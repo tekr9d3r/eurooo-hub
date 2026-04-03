@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — March 2026"
 date: "2026-03-01"
 description: "The total EUR stablecoin market cap reached €702.30M in March 2026, up 3.79% in 30 days. EURC leads with 64.3% market share. Full breakdown of all 19 Euro stablecoins."
 coverImage: "/images/eur-stablecoine-market-stats-march-2026.png"
-featured: true
+featured: false
 ---
 
 ## EUR Stablecoin Market Overview — March 2026
