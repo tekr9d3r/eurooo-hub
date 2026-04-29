@@ -14,7 +14,7 @@ That number is not a rounding error. It is a structural fact that a new report s
 
 ## The Numbers
 
-As of April 2026, the total circulating supply of EUR-denominated stablecoins is approximately **€670 million** (~$730 million). The global stablecoin market is worth roughly **$316 billion**. That puts euro stablecoins at **0.23%** of total supply — less than a quarter of one percent.
+As of April 2026, the total circulating supply of EUR-denominated stablecoins is approximately **€670 million** (~$730 million), per [DefiLlama](https://defillama.com/stablecoins). The global stablecoin market is worth roughly **$316 billion**, per [CoinGecko](https://www.coingecko.com/en/categories/stablecoins). That puts euro stablecoins at **0.23%** of total supply — less than a quarter of one percent.
 
 For comparison:
 - **USDT (Tether):** $184 billion — 58% of the global market
@@ -27,7 +27,7 @@ The eurozone's share of global GDP is approximately 14%. Its share of the stable
 
 ## The Report
 
-On April 27, 2026, Blockchain for Europe published a report co-authored by **Erwin Voloder** (Blockchain for Europe) and **Ulrich Bindseil**, an official at the European Central Bank. It directly addresses this imbalance.
+On April 27, 2026, [Blockchain for Europe published a report](https://cointelegraph.com/news/industry-group-mica-euro-stablecoins-too-small-to-compete) co-authored by **Erwin Voloder** (Blockchain for Europe) and **Ulrich Bindseil**, an official at the European Central Bank. It directly addresses this imbalance.
 
 The central finding: **"The combination of strict safeguards and zero interest has created a safe but structurally uncompetitive euro stablecoin segment."**
 
@@ -37,11 +37,11 @@ The report does not call MiCA a failure. It argues MiCA achieved exactly what it
 
 ## The Rule That Explains Everything
 
-**MiCA Article 50** contains a single provision that sits at the heart of the problem: issuers of Electronic Money Tokens (the MiCA category that covers euro stablecoins like EURC, EURCV, and EURI) **are prohibited from granting interest or any other benefit related to the length of time a holder holds such tokens**.
+**[MiCA Article 50](https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica)** contains a single provision that sits at the heart of the problem: issuers of Electronic Money Tokens (the MiCA category that covers euro stablecoins like EURC, EURCV, and EURI) **are prohibited from granting interest or any other benefit related to the length of time a holder holds such tokens**.
 
 No yield. No staking rewards. No interest on balance. Nothing.
 
-The rationale is defensible: the EU did not want euro stablecoins competing with bank deposits, destabilising the banking sector, or creating uninsured "shadow deposits" at scale. The analogy is e-money under the EU's earlier Electronic Money Directive — PayPal EUR balances don't pay interest for the same reason.
+The rationale is defensible: the EU did not want euro stablecoins competing with bank deposits, destabilising the banking sector, or creating uninsured "shadow deposits" at scale. The analogy is e-money under the EU's earlier Electronic Money Directive — PayPal EUR balances don't pay interest for the same reason. The [Oxford Law Blog has a detailed breakdown](https://blogs.law.ox.ac.uk/oblb/blog-post/2026/03/stablecoin-interest-crossroads-mica-prohibition-us-regulatory-maze) of how this prohibition compares to the US approach.
 
 But the market environment has changed since those rules were drafted. In 2020 or 2021, when European interest rates were near zero, the prohibition was effectively costless. Nobody was earning meaningful yield on euros anyway.
 
@@ -77,7 +77,7 @@ So the gap is not that euro stablecoin users cannot earn yield at all. They can,
 
 The Blockchain for Europe report is not alone. The industry has been vocal.
 
-Crypto lobby groups have publicly argued there is **"no justification"** for the blanket prohibition on yield for euro stablecoins, pressing for targeted MiCA amendments. Bybit's CEO stated in April 2026 that **"MiCA alone is not enough to turn a profit"**, pointing to the structural constraints that limit business models for compliant operators.
+Crypto lobby groups have [publicly argued](https://ambcrypto.com/no-justification-crypto-lobby-pushes-for-mica-changes-to-boost-euro-stablecoin-growth/) there is **"no justification"** for the blanket prohibition on yield for euro stablecoins, pressing for targeted MiCA amendments. [Bybit's CEO stated in April 2026](https://www.coindesk.com/policy/2026/04/26/mica-s-not-enough-bybit-ceo-says-firms-need-other-licenses-to-turn-a-profit-in-europe) that **"MiCA alone is not enough to turn a profit"**, pointing to the structural constraints that limit business models for compliant operators.
 
 ClearBank, which received MiCA authorisation from the Dutch Authority for the Financial Markets (AFM) on April 9, 2026 and plans to offer EURC and USDC settlement services, is a signal that institutions *want* to operate in the euro stablecoin space — but the compliance cost and structural limitations mean only well-capitalised players can do it sustainably.
 
@@ -91,7 +91,7 @@ None of this is to say MiCA was a mistake. The counter-arguments deserve fair tr
 
 **MiCA eliminated bad actors.** EURT (Tether's euro stablecoin) and EURA (Angle Protocol) were delisted from EU exchanges for non-compliance. The market that remains is cleaner and more trustworthy. Consumer protection is real.
 
-**The S&P Global forecast still holds.** Even under current MiCA constraints, S&P Global projects the EUR stablecoin market could reach €570 billion to €1.1 trillion by 2030 — driven by real-world asset tokenisation, which MiCA's trust framework actually enables.
+**The S&P Global forecast still holds.** Even under current MiCA constraints, [S&P Global projects](https://www.theblock.co/post/388247/sp-projects-1600x-upper-bound-increase-in-euro-stablecoin-issuance-to-1-3-trillion-by-2030) the EUR stablecoin market could reach €570 billion to €1.1 trillion by 2030 — driven by real-world asset tokenisation, which MiCA's trust framework actually enables.
 
 **The question is not whether MiCA was right.** It clearly created a safer, more trustworthy market. The question is whether specific rules — in particular Article 50's interest prohibition and the reserve composition requirements — are calibrated correctly for a world where positive interest rates and DeFi yield are structural features of the landscape, not anomalies.
 
@@ -99,7 +99,7 @@ None of this is to say MiCA was a mistake. The counter-arguments deserve fair tr
 
 ## What Reform Would Look Like
 
-The Blockchain for Europe report proposes three targeted changes — notably *not* a wholesale rollback of MiCA:
+The [Blockchain for Europe report](https://bitcoinist.com/industry-group-mica-reforms-boost-euro-stablecoins/) proposes three targeted changes — notably *not* a wholesale rollback of MiCA:
 
 1. **Broaden the eligible reserve asset mix** — allow issuers to hold a wider range of high-quality euro-denominated assets (aligned with the EU's Liquidity Coverage Ratio framework), not just bank deposits and short-term government bonds.
 
