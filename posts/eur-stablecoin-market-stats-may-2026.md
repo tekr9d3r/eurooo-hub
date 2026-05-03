@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — May 2026"
 date: "2026-05-03"
 description: "The EUR stablecoin market fell to €655.76M in May 2026, down 3.59% in 30 days — a third consecutive monthly decline. EURC rebounded to 65.5% share, EURCV hit a new high at 14.2%, and AEUR collapsed 94% in a single month."
 coverImage: "/images/market-stats-eurooo-may-2026.png"
-featured: false
+featured: true
 ---
 
 ## EUR Stablecoin Market Overview — May 2026

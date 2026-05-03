@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — April 2026"
 date: "2026-04-03"
 description: "The EUR stablecoin market pulled back to €670.25M in April 2026, down 4.65% in 30 days. EURCV surged to 12.4% market share while EURI overtook AEUR for third place. Full breakdown of all 18 Euro stablecoins."
 coverImage: "/images/market-stats-april-2026.png"
-featured: true
+featured: false
 ---
 
 ## EUR Stablecoin Market Overview — April 2026
