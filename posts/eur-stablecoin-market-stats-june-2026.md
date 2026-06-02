@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — June 2026"
 date: "2026-06-02"
 description: "The EUR stablecoin market slipped to ~€625M in June 2026, a fourth consecutive monthly decline from March's €702M peak. EURCV crossed €100M for the first time, Qivalis expanded to 37 banks, and the MiCA CASP deadline is now 29 days away."
 coverImage: "/images/eur-stablecoins-marketstats-june-2026.png"
-featured: false
+featured: true
 ---
 
 ## EUR Stablecoin Market Overview — June 2026
