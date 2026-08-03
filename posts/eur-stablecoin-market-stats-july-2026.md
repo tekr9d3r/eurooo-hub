@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — July 2026"
 date: "2026-07-01"
 description: "The EUR stablecoin market stabilised at $655M in July 2026 as MiCA's transitional period ended. Binance exited the EU, 83% of crypto firms are unlicensed, only 14 exchanges hold full CASP authorisation — and EURC now commands 61% of an increasingly consolidated market."
 coverImage: "/images/euro-stablecoin-stats-july-2026.png"
-featured: true
+featured: false
 ---
 
 ## EUR Stablecoin Market Overview — July 2026
