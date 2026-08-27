@@ -64,21 +64,17 @@ Judge this in six months, when the rollout has either cleared its three caveats 
 
 ## Where This Lands in the Market
 
-For context, here is the euro stablecoin market as it stands today:
+The euro stablecoin market as it stands today:
 
-| Token | Supply | Share | 30-day |
-|---|---|---|---|
-| EURC (Circle) | €454.9M | 58.6% | −0.3% |
-| EURCV (SG Forge) | €176.6M | 22.8% | **+18.9%** |
-| EURI (Banking Circle) | €38.6M | 5.0% | −2.1% |
-| EURE (Monerium) | €32.1M | 4.1% | −5.6% |
-| EUROP (Schuman) | €21.5M | 2.8% | **+48.9%** |
-| REUR (Royal Euro) | €17.5M | 2.3% | — |
-| **Total** | **€776M** | | |
+- **EURC** (Circle) — €454.9M, 58.6% share, flat over 30 days
+- **EURCV** (SG Forge) — €176.6M, 22.8%, **up 18.9%**
+- **EURI** (Banking Circle) — €38.6M, 5.0%
+- **EURE** (Monerium) — €32.1M, 4.1%
+- **EUROP** (Schuman) — €21.5M, 2.8%, **up 48.9%**
 
-Two things stand out. The total is at another record — **€776M**, up from €757M three weeks ago. And **EURC has dropped below 60% share for the first time**, to 58.6%, while its absolute supply went slightly negative. EURCV is now at 22.8% and still compounding at nearly 19% a month.
+Total supply is **€776M** — another record, up from €757M three weeks ago.
 
-EURR enters a market that is already, for the first time, genuinely competitive. A year ago Circle had no challenger. Today it faces SG Forge at scale, CACEIS's institutional EURXT, a 37-bank Qivalis consortium in licensing, and now Stripe's issuance infrastructure sitting behind Europe's largest neobank.
+The number that matters is EURC's. It has **fallen below 60% share for the first time**, to 58.6%, while EURCV compounds at nearly 19% a month. A year ago Circle had no real challenger. It now faces SG Forge at scale, CACEIS's institutional EURXT, a 37-bank Qivalis consortium in licensing, and Stripe's issuance stack sitting behind Europe's largest neobank.
 
 ---
 
