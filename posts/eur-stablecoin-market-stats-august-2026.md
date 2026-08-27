@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — August 2026"
 date: "2026-08-03"
 description: "The EUR stablecoin market hit an all-time high of ~€757M in August 2026, up 11.8% in 30 days — the strongest month on record. EURCV surged 31% to a 20% share, Crédit Agricole launched EURXT, the ECB named 36 digital euro pilot firms, and the post-MiCA USDT exodus is finally showing up in euro supply."
 coverImage: "/images/eur-stablecoin-market-stats-august-2026.png"
-featured: true
+featured: false
 ---
 
 ## EUR Stablecoin Market Overview — August 2026
