@@ -3,7 +3,7 @@ title: "Revolut Launched EURR. Here's What Actually Went Live."
 date: "2026-08-27"
 description: "Revolut began a gated EURR pilot on August 26, five days before it finishes deleting USDT from Europe. The token is issued by Stripe-owned Bridge, not Revolut — and it shares its ticker with a euro stablecoin that was exploited in May and now trades at six cents."
 coverImage: "/images/revolut-eurr.png"
-featured: true
+featured: false
 ---
 
 ## Revolut Enters the Euro Stablecoin Market
