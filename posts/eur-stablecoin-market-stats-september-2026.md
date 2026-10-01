@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — September 2026"
 date: "2026-09-01"
 description: "The EUR stablecoin market reached €792M in September 2026, a second straight record month. EURC's share fell to 57.5% as EURCV added another 16.5%, Revolut and Stripe's Bridge launched EURR, and roughly €32M of the headline total is supply that is frozen, unbacked or non-EU."
 coverImage: "/images/eur-stablecoin-market-stats-september-2026.png"
-featured: true
+featured: false
 ---
 
 ## EUR Stablecoin Market Overview — September 2026
@@ -99,7 +99,7 @@ The top two now hold **80.1%** between them. But the composition of that 80% has
 - **XRP Ledger** — €13.2M (~1.7%)
 - **BSC** — €10.4M · **Avalanche** — €7.3M · **Tron** — €7.0M · **Polygon** — €6.3M
 
-Two changes worth noting. **Base has overtaken Solana** for the first time, on the back of EURC's native Coinbase integration. And **XRP Ledger grew roughly tenfold**, from about €1.2M to €13.2M, almost entirely from EURCV and EUROP — the clearest sign yet that bank-issued euro tokens are treating XRPL as a settlement rail rather than a retail venue.
+Two things worth noting. **Base and Solana are effectively tied** around €57–60M and have been trading places week to week since July, with neither establishing a durable lead. And **XRP Ledger sits near €13M** after a step-change in **mid-July**, when it went from roughly €1.1M to €12.5M in a single week on EURCV and EUROP deployments — the clearest sign yet that bank-issued euro tokens are treating XRPL as a settlement rail rather than a retail venue. It has been flat since that jump.
 
 Ethereum's dominance ticked up again to 72%. Institutional euro issuance keeps defaulting to mainnet.
 
@@ -128,7 +128,7 @@ Ethereum's dominance ticked up again to 72%. Institutional euro issuance keeps d
 3. **Eight points of the euro market moved from Circle to Société Générale in four months.** Neither product changed. Institutional distribution did.
 4. **Stripe quietly became a euro stablecoin issuer.** Bridge's passportable EMI licence lets any consumer platform launch a branded euro token without touching Circle. Revolut is the proof of concept, not the endpoint.
 5. **Roughly €37M of the headline total is broken or non-EU.** REUR, frozen StablR EURR and abandoned EURT. Clean compliant supply is nearer €755M, and the divergence is growing each month.
-6. **Base passed Solana; XRPL grew 10x.** Bank-issued euro tokens are building settlement rails, not retail venues.
+6. **XRPL has become a bank settlement rail.** It stepped up roughly tenfold in mid-July on EURCV and EUROP and has held near €13M since. Base and Solana remain tied around €57–60M.
 
 ---
 
@@ -147,7 +147,7 @@ A euro stablecoin issued by Bridge Building S.A., the Luxembourg entity of Strip
 StablR was exploited in May 2026, when an attacker compromised its minting infrastructure and issued roughly 6.41 million unbacked EURR and 14.33 million unbacked USDR. Minting and redemption remain suspended, the board has activated a formal recovery plan with the MFSA notified, and the token trades near $0.059 against a €1 peg. Its €14.8M DefiLlama figure counts tokens outstanding on-chain, including the unbacked mint — it is not backed, redeemable supply. Note that Revolut's separate EURR shares the same ticker.
 
 **Which blockchain has the most euro stablecoins?**
-Ethereum, with roughly €570M or 72% of all euro stablecoin supply. Base is second at €58.6M, having overtaken Solana (€56.7M) this month. XRP Ledger grew roughly tenfold to €13.2M, driven by EURCV and EUROP.
+Ethereum, with roughly €570M or 72% of all euro stablecoin supply. Base and Solana are effectively tied for second around €57–60M and swap places week to week. XRP Ledger holds roughly €13M, following a tenfold step-change in mid-July driven by EURCV and EUROP deployments.
 
 **Has Qivalis launched?**
 Not yet. The bank consortium remains in EMI licensing with De Nederlandsche Bank and is still targeting H2 2026, which leaves four months. Reserves are designed at minimum 40% bank deposits with the remainder in short-dated eurozone government bonds, and 24-hour redemption. No licence grant has been announced publicly.
