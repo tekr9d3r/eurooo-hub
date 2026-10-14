@@ -3,7 +3,7 @@ title: "EUR Stablecoin Market Stats — October 2026"
 date: "2026-10-01"
 description: "The EUR stablecoin market reached €811M in October 2026, a third straight record. EURC halted a four-month share slide and grew 5.2% as Circle's Arc mainnet went live, EURCV's run cooled sharply, and ESMA proposed banning licensed firms from touching non-compliant stablecoins."
 coverImage: "/images/eur-stablecoin-market-stats-october-2026.png"
-featured: true
+featured: false
 ---
 
 ## EUR Stablecoin Market Overview — October 2026
