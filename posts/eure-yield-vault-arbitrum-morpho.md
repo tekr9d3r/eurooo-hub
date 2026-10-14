@@ -1,7 +1,7 @@
 ---
 title: "EURe Yield Lands on Arbitrum — What's Actually Inside the New Morpho Vault"
 date: "2026-10-14"
-description: "kpk has launched a EURe yield vault on Morpho and Arbitrum, and it already holds 476,000 EURe. It exists because MiCA forbids Monerium from paying you interest. Here's how it works, what it really earns, and why the headline APY is a mirage."
+description: "kpk has launched a EURe yield vault on Morpho and Arbitrum, and it already holds 476,000 EURe. It exists because MiCA forbids Monerium from paying you interest. It pays 3.00% — but only 0.85% once you strip out token rewards."
 coverImage: "/images/eure-yield-vault-arbitrum-morpho.png"
 featured: true
 ---
@@ -58,22 +58,27 @@ The vault supplies EURe into approved isolated lending markets on Morpho and all
 
 ---
 
-## The Headline APY Is a Mirage
+## What It Actually Pays
 
-Here is where the live market data matters more than the documentation.
+[Morpho's vault page](https://app.morpho.org/arbitrum/vault/0x7bfdE3A7bd346Da92521D384563F89BB45dE1f60/kpk-eure-yield) publishes the numbers directly:
 
-Pulling the current state of those four markets on Arbitrum:
+- **Net APY — 3.00%**
+- **Net APY excluding rewards — 0.85%**
+- **Total deposits — $531,271**
+- **Available liquidity — $481,640**, roughly 91% of the vault and well above the ≥30% target
 
-- **wstETH/EURe** — supply APY **17.18%**, utilisation **99.8%**, roughly 19,500 EURe supplied
-- **WBTC/EURe** — supply APY **2.83%**, utilisation 78.4%, roughly 31,900 EURe supplied
-- **WETH/EURe** — supply APY **2.78%**, utilisation ~90%
-- **USDC/EURe** — supply APY **2.78%**, utilisation ~90%
+The distance between those first two numbers is the most useful thing on the page. Of the 3.00% on display, only **0.85 points come from lending interest**. The remaining ~2.15 points are rewards — token incentives, which are discretionary, finite, and set by whoever is paying them. On the vault's actual business of lending euros to borrowers, it currently earns well under 1%.
 
-If you see 17% quoted anywhere for EURe lending, that is the wstETH market — and it is not a yield, it is a symptom. A 17% supply rate at **99.8% utilisation in a market containing under 20,000 EURe** means borrow demand has run into a wall of almost no supply. Morpho's rate curves spike hard as utilisation approaches 100% precisely to attract suppliers.
+That is a reading of the markets underneath, not a flaw in the vault's construction. Current state of the four approved markets on Arbitrum:
 
-What happens next is arithmetic. As the vault deploys meaningful capital into that market, utilisation falls and the rate collapses toward the others. You cannot put 476,000 EURe into a 20,000 EURe market and keep 17%. The realistic blended return, once allocation settles across four markets paying roughly 2.8%, is **low single digits** — in the same range as the [Moonwell Flagship EURC vault on Base](https://app.morpho.org/), the largest comparable euro vault, which currently runs about **3.07%** on roughly $826K.
+- **wstETH/EURe** — supply APY 17.18%, utilisation **99.8%**, roughly 19,500 EURe supplied
+- **WBTC/EURe** — supply APY 2.83%, utilisation 78.4%, roughly 31,900 EURe supplied
+- **WETH/EURe** — supply APY 2.78%, utilisation ~90%
+- **USDC/EURe** — supply APY 2.78%, utilisation ~90%
 
-That is not a criticism of the vault. It is a correction to the number you will see screenshotted.
+The wstETH market's 17.18% looks like an opportunity and is really a measurement of scarcity: borrow demand pressing against a market holding under 20,000 EURe, with Morpho's rate curve spiking near full utilisation to attract suppliers. It cannot absorb meaningful size — deploy into it and utilisation falls, taking the rate with it. The vault holds roughly 476,000 EURe against markets that collectively show about 51,000 EURe supplied, which is why 91% of it is sitting in the liquidity buffer rather than earning.
+
+For context, the [Moonwell Flagship EURC vault on Base](https://app.morpho.org/), the largest comparable euro vault, runs about **3.07%** on roughly $826K — effectively the same headline, and the same question about how much of it is incentive.
 
 ---
 
@@ -107,7 +112,7 @@ That is the real question this launch poses. Not whether euro savers want yield 
 
 1. **The vault exists because MiCA Article 50 bans EMT issuers from paying interest.** Monerium legally cannot pay EURe holders yield. Third-party DeFi is the only remaining route.
 2. **It is live and already sizeable** — 476,210 EURe, roughly 9% of all EURe on Arbitrum — but the share price of 1.00027 shows it is days old with essentially no track record.
-3. **Ignore any 17% figure.** That is the wstETH/EURe market at 99.8% utilisation on under 20,000 EURe. It will compress as capital arrives. Expect low single digits.
+3. **It pays 3.00%, but only 0.85% of that is lending interest.** The rest is token rewards, which are discretionary and finite. Check the "excluding rewards" figure before treating 3% as the durable number.
 4. **0% performance fee signals a land-grab,** not generosity. The euro yield category barely exists and kpk is moving to own it.
 5. **The binding constraint is borrow demand, not deposits.** Roughly 51,000 EURe is borrowed across the active markets. Until that grows, the yield has nowhere to come from.
 6. **The regulatory perimeter is untested.** Article 50(2) reaches CASPs servicing EMTs, and ESMA has just proposed tightening the stablecoin regime. Euro yield products sit close to a line nobody has drawn precisely.
@@ -123,7 +128,7 @@ An ERC-4626 vault on Arbitrum that supplies Monerium's EURe into approved isolat
 Roughly 476,210 EURe as of October 14, 2026, read directly from the contract. That is about 9% of all EURe on Arbitrum and 1.5% of EURe in circulation across all chains.
 
 **What yield does it actually pay?**
-There is no meaningful track record yet — the share price is 1.00027, implying about 0.03% accrued since inception. Three of its four underlying markets currently pay roughly 2.8%; the fourth shows 17.18% but only because it sits at 99.8% utilisation on under 20,000 EURe, and that rate will fall as capital is deployed. A realistic expectation is low single digits, comparable to the ~3.07% on the largest EURC vault.
+Morpho's vault page shows a net APY of **3.00%**, and **0.85% excluding rewards**. That gap matters: roughly 2.15 points of the headline come from token incentives rather than lending interest. There is also no meaningful track record yet — the share price is 1.00027, implying about 0.03% accrued since inception. For comparison, the largest EURC vault runs about 3.07%.
 
 **Why can't Monerium just pay interest on EURe directly?**
 MiCA Article 50 prohibits e-money token issuers from granting interest, and defines interest to include any benefit tied to how long a holder holds the token. Paragraph 2 extends the prohibition to crypto-asset service providers offering services related to those tokens. The policy intent is to stop euro stablecoins competing with bank deposits.
